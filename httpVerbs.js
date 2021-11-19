@@ -14,7 +14,7 @@ app.post('/book', (req, res) => {
 })
 app.patch("/book/:pages",(req, res) => {
     const newBook = book.map((b)=>{
-        if(req.params.pages === b.pages){
+        if(+req.params.pages == b.pages){
             return req.body;
         }
         return b;
@@ -24,7 +24,7 @@ app.patch("/book/:pages",(req, res) => {
 
 app.delete("/book/:pages",(req, res) => {
     const deletebook = book.filter((b)=>
-        b.pages !== req.params.pages)
+        b.pages !== +req.params.pages);
     res.send(deletebook);
 })
 
