@@ -1,0 +1,1569 @@
+Microsoft Windows [Version 10.0.19042.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\chinni>mongo
+MongoDB shell version v5.0.4
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("cb64940f-e304-409a-a8fc-6cde10ad67af") }
+MongoDB server version: 5.0.4
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-19T16:04:46.960+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> mongoimport --drop --collection movies_data --file ~/Downloads/movie.csv --jsonArray
+uncaught exception: SyntaxError: unexpected token: identifier :
+@(shell):1:14
+> mogo
+uncaught exception: ReferenceError: mogo is not defined :
+@(shell):1:1
+> mongo
+uncaught exception: ReferenceError: mongo is not defined :
+@(shell):1:1
+>
+>
+>
+> use assignment
+switched to db assignment
+>
+> db.movies.find({}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bc"),
+        "movie_title" : "Pirates of the Caribbean: At World's End",
+        "movie_genre" : "action ",
+        "production_year" : "2007",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bd"),
+        "movie_title" : "Spectre",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1be"),
+        "movie_title" : "The Dark Knight Rises",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bf"),
+        "movie_title" : "Star Wars: Episode VII - The Force Awakens            ",
+        "movie_genre" : "comedy",
+        "production_year" : "2006",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c0"),
+        "movie_title" : "John Carter",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c7"),
+        "movie_title" : "Quantum of Solace",
+        "movie_genre" : "horror",
+        "production_year" : "2008",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c8"),
+        "movie_title" : "Pirates of the Caribbean: Dead Man's Chest",
+        "movie_genre" : "action ",
+        "production_year" : "2006",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c9"),
+        "movie_title" : "The Lone Ranger",
+        "movie_genre" : "romance",
+        "production_year" : "2013",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ca"),
+        "movie_title" : "Man of Steel",
+        "movie_genre" : "drama",
+        "production_year" : "2013",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cb"),
+        "movie_title" : "The Chronicles of Narnia: Prince Caspian",
+        "movie_genre" : "comedy",
+        "production_year" : "2008",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+Type "it" for more
+> it
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cf"),
+        "movie_title" : "The Hobbit: The Battle of the Five Armies",
+        "movie_genre" : "romance",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d0"),
+        "movie_title" : "The Amazing Spider-Man",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d1"),
+        "movie_title" : "Robin Hood",
+        "movie_genre" : "comedy",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d2"),
+        "movie_title" : "The Hobbit: The Desolation of Smaug",
+        "movie_genre" : "thriller",
+        "production_year" : "2013",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d3"),
+        "movie_title" : "The Golden Compass",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d4"),
+        "movie_title" : "King Kong",
+        "movie_genre" : "action ",
+        "production_year" : "2005",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d5"),
+        "movie_title" : "Titanic",
+        "movie_genre" : "romance",
+        "production_year" : "1997",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d6"),
+        "movie_title" : "Captain America: Civil War",
+        "movie_genre" : "drama",
+        "production_year" : "2016",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d7"),
+        "movie_title" : "Battleship",
+        "movie_genre" : "comedy",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d8"),
+        "movie_title" : "Jurassic World",
+        "movie_genre" : "thriller",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d9"),
+        "movie_title" : "Skyfall",
+        "movie_genre" : "horror",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1da"),
+        "movie_title" : "Spider-Man 2",
+        "movie_genre" : "action ",
+        "production_year" : "2004",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1db"),
+        "movie_title" : "Iron Man 3",
+        "movie_genre" : "romance",
+        "production_year" : "2013",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1dc"),
+        "movie_title" : "Alice in Wonderland",
+        "movie_genre" : "drama",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1dd"),
+        "movie_title" : "X-Men: The Last Stand",
+        "movie_genre" : "comedy",
+        "production_year" : "2006",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1de"),
+        "movie_title" : "Monsters University",
+        "movie_genre" : "thriller",
+        "production_year" : "2013",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1df"),
+        "movie_title" : "Transformers: Revenge of the Fallen",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1e0"),
+        "movie_title" : "Transformers: Age of Extinction",
+        "movie_genre" : "action ",
+        "production_year" : "2014",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1e1"),
+        "movie_title" : "Oz the Great and Powerful",
+        "movie_genre" : "romance",
+        "production_year" : "2013",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1e2"),
+        "movie_title" : "The Amazing Spider-Man 2",
+        "movie_genre" : "drama",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+Type "it" for more
+>
+> db.movies.find({"movie_title":{$eq:"The Amazing Spider-Man 2"}}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1e2"),
+        "movie_title" : "The Amazing Spider-Man 2",
+        "movie_genre" : "drama",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+> db.movies.find({"movie_title":{$ne:"The Amazing Spider-Man 2"}}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bc"),
+        "movie_title" : "Pirates of the Caribbean: At World's End",
+        "movie_genre" : "action ",
+        "production_year" : "2007",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bd"),
+        "movie_title" : "Spectre",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1be"),
+        "movie_title" : "The Dark Knight Rises",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bf"),
+        "movie_title" : "Star Wars: Episode VII - The Force Awakens            ",
+        "movie_genre" : "comedy",
+        "production_year" : "2006",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c0"),
+        "movie_title" : "John Carter",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c7"),
+        "movie_title" : "Quantum of Solace",
+        "movie_genre" : "horror",
+        "production_year" : "2008",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c8"),
+        "movie_title" : "Pirates of the Caribbean: Dead Man's Chest",
+        "movie_genre" : "action ",
+        "production_year" : "2006",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c9"),
+        "movie_title" : "The Lone Ranger",
+        "movie_genre" : "romance",
+        "production_year" : "2013",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ca"),
+        "movie_title" : "Man of Steel",
+        "movie_genre" : "drama",
+        "production_year" : "2013",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cb"),
+        "movie_title" : "The Chronicles of Narnia: Prince Caspian",
+        "movie_genre" : "comedy",
+        "production_year" : "2008",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+Type "it" for more
+> db.movies.find({"budget":{$gt:14000}}).pretty()
+>
+> db.movies.find({"budget":{$gt:"14000"}}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cf"),
+        "movie_title" : "The Hobbit: The Battle of the Five Armies",
+        "movie_genre" : "romance",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d0"),
+        "movie_title" : "The Amazing Spider-Man",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d1"),
+        "movie_title" : "Robin Hood",
+        "movie_genre" : "comedy",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d7"),
+        "movie_title" : "Battleship",
+        "movie_genre" : "comedy",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d8"),
+        "movie_title" : "Jurassic World",
+        "movie_genre" : "thriller",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d9"),
+        "movie_title" : "Skyfall",
+        "movie_genre" : "horror",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1da"),
+        "movie_title" : "Spider-Man 2",
+        "movie_genre" : "action ",
+        "production_year" : "2004",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1db"),
+        "movie_title" : "Iron Man 3",
+        "movie_genre" : "romance",
+        "production_year" : "2013",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1dc"),
+        "movie_title" : "Alice in Wonderland",
+        "movie_genre" : "drama",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1e2"),
+        "movie_title" : "The Amazing Spider-Man 2",
+        "movie_genre" : "drama",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+Type "it" for more
+> db.movies.find({"budget":{$gte:"14000"}}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c0"),
+        "movie_title" : "John Carter",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cb"),
+        "movie_title" : "The Chronicles of Narnia: Prince Caspian",
+        "movie_genre" : "comedy",
+        "production_year" : "2008",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cf"),
+        "movie_title" : "The Hobbit: The Battle of the Five Armies",
+        "movie_genre" : "romance",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d0"),
+        "movie_title" : "The Amazing Spider-Man",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d1"),
+        "movie_title" : "Robin Hood",
+        "movie_genre" : "comedy",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d6"),
+        "movie_title" : "Captain America: Civil War",
+        "movie_genre" : "drama",
+        "production_year" : "2016",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d7"),
+        "movie_title" : "Battleship",
+        "movie_genre" : "comedy",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d8"),
+        "movie_title" : "Jurassic World",
+        "movie_genre" : "thriller",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d9"),
+        "movie_title" : "Skyfall",
+        "movie_genre" : "horror",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1da"),
+        "movie_title" : "Spider-Man 2",
+        "movie_genre" : "action ",
+        "production_year" : "2004",
+        "budget" : "15000"
+}
+Type "it" for more
+>
+> db.movies.find({"budget":{$gte:"14000"}}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c0"),
+        "movie_title" : "John Carter",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cb"),
+        "movie_title" : "The Chronicles of Narnia: Prince Caspian",
+        "movie_genre" : "comedy",
+        "production_year" : "2008",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cf"),
+        "movie_title" : "The Hobbit: The Battle of the Five Armies",
+        "movie_genre" : "romance",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d0"),
+        "movie_title" : "The Amazing Spider-Man",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d1"),
+        "movie_title" : "Robin Hood",
+        "movie_genre" : "comedy",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d6"),
+        "movie_title" : "Captain America: Civil War",
+        "movie_genre" : "drama",
+        "production_year" : "2016",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d7"),
+        "movie_title" : "Battleship",
+        "movie_genre" : "comedy",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d8"),
+        "movie_title" : "Jurassic World",
+        "movie_genre" : "thriller",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d9"),
+        "movie_title" : "Skyfall",
+        "movie_genre" : "horror",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1da"),
+        "movie_title" : "Spider-Man 2",
+        "movie_genre" : "action ",
+        "production_year" : "2004",
+        "budget" : "15000"
+}
+Type "it" for more
+>
+>
+>
+>
+> db.movies.find({$and:[{"production_year":{$gt:"2000"}},{"budget":{$gt:"10000"}}]}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bf"),
+        "movie_title" : "Star Wars: Episode VII - The Force Awakens            ",
+        "movie_genre" : "comedy",
+        "production_year" : "2006",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c0"),
+        "movie_title" : "John Carter",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ca"),
+        "movie_title" : "Man of Steel",
+        "movie_genre" : "drama",
+        "production_year" : "2013",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cb"),
+        "movie_title" : "The Chronicles of Narnia: Prince Caspian",
+        "movie_genre" : "comedy",
+        "production_year" : "2008",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cf"),
+        "movie_title" : "The Hobbit: The Battle of the Five Armies",
+        "movie_genre" : "romance",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d0"),
+        "movie_title" : "The Amazing Spider-Man",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d1"),
+        "movie_title" : "Robin Hood",
+        "movie_genre" : "comedy",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d6"),
+        "movie_title" : "Captain America: Civil War",
+        "movie_genre" : "drama",
+        "production_year" : "2016",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d7"),
+        "movie_title" : "Battleship",
+        "movie_genre" : "comedy",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1d8"),
+        "movie_title" : "Jurassic World",
+        "movie_genre" : "thriller",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+Type "it" for more
+> db.movies.find({$or:[{"production_year":{$gt:"2000"}},{"budget":{$gt:"10000"}}]}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bb"),
+        "movie_title" : "Avatar",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bc"),
+        "movie_title" : "Pirates of the Caribbean: At World's End",
+        "movie_genre" : "action ",
+        "production_year" : "2007",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bd"),
+        "movie_title" : "Spectre",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1be"),
+        "movie_title" : "The Dark Knight Rises",
+        "movie_genre" : "drama",
+        "production_year" : "2012",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1bf"),
+        "movie_title" : "Star Wars: Episode VII - The Force Awakens            ",
+        "movie_genre" : "comedy",
+        "production_year" : "2006",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c0"),
+        "movie_title" : "John Carter",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c1"),
+        "movie_title" : "Spider-Man 3",
+        "movie_genre" : "horror",
+        "production_year" : "2007",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c2"),
+        "movie_title" : "Tangled",
+        "movie_genre" : "action ",
+        "production_year" : "2010",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c3"),
+        "movie_title" : "Avengers: Age of Ultron",
+        "movie_genre" : "romance",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c4"),
+        "movie_title" : "Harry Potter and the Half-Blood Prince",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c5"),
+        "movie_title" : "Batman v Superman: Dawn of Justice",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c6"),
+        "movie_title" : "Superman Returns",
+        "movie_genre" : "thriller",
+        "production_year" : "2006",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c7"),
+        "movie_title" : "Quantum of Solace",
+        "movie_genre" : "horror",
+        "production_year" : "2008",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c8"),
+        "movie_title" : "Pirates of the Caribbean: Dead Man's Chest",
+        "movie_genre" : "action ",
+        "production_year" : "2006",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1c9"),
+        "movie_title" : "The Lone Ranger",
+        "movie_genre" : "romance",
+        "production_year" : "2013",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ca"),
+        "movie_title" : "Man of Steel",
+        "movie_genre" : "drama",
+        "production_year" : "2013",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cb"),
+        "movie_title" : "The Chronicles of Narnia: Prince Caspian",
+        "movie_genre" : "comedy",
+        "production_year" : "2008",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cc"),
+        "movie_title" : "The Avengers",
+        "movie_genre" : "thriller",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1cd"),
+        "movie_title" : "Pirates of the Caribbean: On Stranger Tides",
+        "movie_genre" : "horror",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1ce"),
+        "movie_title" : "Men in Black 3",
+        "movie_genre" : "action ",
+        "production_year" : "2012",
+        "budget" : "15000"
+}
+Type "it" for more
+> db.movies.find({$nor:[{"production_year":{$gt:"2000"}},{"budget":{$gt:"10000"}}]}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc261"),
+        "movie_title" : "Lethal Weapon 4",
+        "movie_genre" : "comedy",
+        "production_year" : "1998",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc298"),
+        "movie_title" : "The Perfect Storm",
+        "movie_genre" : "thriller",
+        "production_year" : "2000",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2c6"),
+        "movie_title" : "Speed 2: Cruise Control",
+        "movie_genre" : "drama",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2cf"),
+        "movie_title" : "Stuart Little",
+        "movie_genre" : "horror",
+        "production_year" : "1999",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2db"),
+        "movie_title" : "Terminator 2: Judgment Day",
+        "movie_genre" : "horror",
+        "production_year" : "1991",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2e5"),
+        "movie_title" : "The Emperor's New Groove",
+        "movie_genre" : "comedy",
+        "production_year" : "2000",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2f0"),
+        "movie_title" : "Batman Forever",
+        "movie_genre" : "drama",
+        "production_year" : "1995",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2f1"),
+        "movie_title" : "Starship Troopers",
+        "movie_genre" : "comedy",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc307"),
+        "movie_title" : "The Fifth Element",
+        "movie_genre" : "romance",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc31c"),
+        "movie_title" : "Toy Story 2",
+        "movie_genre" : "thriller",
+        "production_year" : "1999",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc328"),
+        "movie_title" : "Die Hard with a Vengeance",
+        "movie_genre" : "thriller",
+        "production_year" : "1995",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc332"),
+        "movie_title" : "Contact",
+        "movie_genre" : "drama",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc333"),
+        "movie_title" : "Hollow Man",
+        "movie_genre" : "comedy",
+        "production_year" : "2000",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc33d"),
+        "movie_title" : "Volcano",
+        "movie_genre" : "romance",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc33e"),
+        "movie_title" : "The Devil's Own",
+        "movie_genre" : "drama",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc34a"),
+        "movie_title" : "Air Force One",
+        "movie_genre" : "drama",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc354"),
+        "movie_title" : "Enemy of the State",
+        "movie_genre" : "action ",
+        "production_year" : "1998",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc35f"),
+        "movie_title" : "Meet Joe Black",
+        "movie_genre" : "horror",
+        "production_year" : "1998",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc369"),
+        "movie_title" : "Creepshow",
+        "movie_genre" : "comedy",
+        "production_year" : "1982",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc374"),
+        "movie_title" : "Batman Returns",
+        "movie_genre" : "drama",
+        "production_year" : "1992",
+        "budget" : "10000"
+}
+Type "it" for more
+> db.movies.find({"budget":{$not":"10000"}}).pretty()
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:30
+> db.movies.find({"production_year":{&in:["2000","2001,"2002","2003","2004","2005","2006","2007","2008","2009","2010"]}}).pretty()
+uncaught exception: SyntaxError: expected property name, got '&' :
+@(shell):1:35
+> db.movies.find({"production_year":{$in:["2000","2001,"2002","2003","2004","2005","2006","2007","2008","2009","2010"]}}).pretty()
+uncaught exception: SyntaxError: missing ] after element list :
+@(shell):1:54
+>
+> db.movies.find({"production_year":{$in:["2000","2001,"2002","2003","2004","2005","2006","2007","2008","2009","2010"]}}).pretty()
+uncaught exception: SyntaxError: missing ] after element list :
+@(shell):1:54
+>
+>
+> db.movies.find({"production_year":{$gt:"1990"}}).sort({"movie_title":1}).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc2d2"),
+        "movie_title" : "10,000 B.C.            ",
+        "movie_genre" : "drama",
+        "production_year" : "2015",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc351"),
+        "movie_title" : "102 Dalmatians",
+        "movie_genre" : "comedy",
+        "production_year" : "2000",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1f7"),
+        "movie_title" : "2012",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2c0"),
+        "movie_title" : "300: Rise of an Empire",
+        "movie_genre" : "drama",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc210"),
+        "movie_title" : "47 Ronin",
+        "movie_genre" : "action ",
+        "production_year" : "2013",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1f8"),
+        "movie_title" : "A Christmas Carol",
+        "movie_genre" : "action ",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc316"),
+        "movie_title" : "A Good Day to Die Hard",
+        "movie_genre" : "thriller",
+        "production_year" : "2013",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc330"),
+        "movie_title" : "A.I. Artificial Intelligence",
+        "movie_genre" : "action ",
+        "production_year" : "2001",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc280"),
+        "movie_title" : "After Earth",
+        "movie_genre" : "thriller",
+        "production_year" : "2013",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc34a"),
+        "movie_title" : "Air Force One",
+        "movie_genre" : "drama",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc22c"),
+        "movie_title" : "Alexander",
+        "movie_genre" : "thriller",
+        "production_year" : "2004",
+        "budget" : "10000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2cb"),
+        "movie_title" : "Ali",
+        "movie_genre" : "romance",
+        "production_year" : "2001",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc225"),
+        "movie_title" : "Alice Through the Looking Glass",
+        "movie_genre" : "comedy",
+        "production_year" : "2016",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1dc"),
+        "movie_title" : "Alice in Wonderland",
+        "movie_genre" : "drama",
+        "production_year" : "2010",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2c3"),
+        "movie_title" : "Allegiant",
+        "movie_genre" : "horror",
+        "production_year" : "2016",
+        "budget" : "9000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc37b"),
+        "movie_title" : "Alvin and the Chipmunks: Chipwrecked",
+        "movie_genre" : "comedy",
+        "production_year" : "2011",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc32c"),
+        "movie_title" : "Alvin and the Chipmunks: The Road Chip",
+        "movie_genre" : "drama",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2dd"),
+        "movie_title" : "American Gangster",
+        "movie_genre" : "romance",
+        "production_year" : "2007",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc23c"),
+        "movie_title" : "Angels & Demons",
+        "movie_genre" : "drama",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc274"),
+        "movie_title" : "Ant-Man",
+        "movie_genre" : "thriller",
+        "production_year" : "2015",
+        "budget" : "15000"
+}
+Type "it" for more
+>
+> db.movies.find({"production_year":{$gt:"1990"}}).sort({"movie_title":1}).limit(10).pretty()
+{
+        "_id" : ObjectId("61a066e70202678680fcc2d2"),
+        "movie_title" : "10,000 B.C.            ",
+        "movie_genre" : "drama",
+        "production_year" : "2015",
+        "budget" : "13000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc351"),
+        "movie_title" : "102 Dalmatians",
+        "movie_genre" : "comedy",
+        "production_year" : "2000",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1f7"),
+        "movie_title" : "2012",
+        "movie_genre" : "horror",
+        "production_year" : "2009",
+        "budget" : "14000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc2c0"),
+        "movie_title" : "300: Rise of an Empire",
+        "movie_genre" : "drama",
+        "production_year" : "2014",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc210"),
+        "movie_title" : "47 Ronin",
+        "movie_genre" : "action ",
+        "production_year" : "2013",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc1f8"),
+        "movie_title" : "A Christmas Carol",
+        "movie_genre" : "action ",
+        "production_year" : "2009",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc316"),
+        "movie_title" : "A Good Day to Die Hard",
+        "movie_genre" : "thriller",
+        "production_year" : "2013",
+        "budget" : "15000"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc330"),
+        "movie_title" : "A.I. Artificial Intelligence",
+        "movie_genre" : "action ",
+        "production_year" : "2001",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc280"),
+        "movie_title" : "After Earth",
+        "movie_genre" : "thriller",
+        "production_year" : "2013",
+        "budget" : "17350"
+}
+{
+        "_id" : ObjectId("61a066e70202678680fcc34a"),
+        "movie_title" : "Air Force One",
+        "movie_genre" : "drama",
+        "production_year" : "1997",
+        "budget" : "10000"
+}
+>

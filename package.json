@@ -1,14 +1,14 @@
 {
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.11.15"
   },
   "name": "express",
   "version": "1.0.0",
   "main": "server.js",
-  "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-   , "server":"nodemon server.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server1.js"
   },
   "keywords": [],
   "author": "",
