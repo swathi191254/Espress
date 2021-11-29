@@ -1,16 +1,17 @@
+const e = require('express');
 const express = require('express');
 
-const mongooes = require('mongooes');
+const mongoose = require('mongoose');
 
 const app = express();
 
 app.use(express.json());
 
 const connect = () => {
-    return mongooes.connect("mongodb://127.0.0.1:27017/Evaluation")
+    return mongoose.connect("mongodb://127.0.0.1:27017/Evaluation",{useUnifiedTopology: true,useNewUrlParser: true })
 };
 
-const userSchema = new mongooes.Schema({
+const userSchema = new mongoose.Schema({
     company:{type:String, required: true},
     job:{type:String, required: true},
     skill:{type:String, required: true},
@@ -19,14 +20,14 @@ const userSchema = new mongooes.Schema({
     notice:{type:String, required: true },
 
 });
-const User = new mongooes.model("user",userSchema);
+const User = new mongoose.model("user",userSchema);
 
-const postSchema = new mongooes.Schema({
+const postSchema = new mongoose.Schema({
     company: {type:String, required: true},
     job:{type:String, required: true},
     skill:{type:String, required: true},
     tags :[
-        {type:mongooes.Schema.Types.ObjectId,ref:"tag", required: true}
+        {type:mongoose.Schema.Types.ObjectId,ref:"tag", required: true}
     ],
 },
 {
@@ -34,21 +35,34 @@ const postSchema = new mongooes.Schema({
     timestamps:true
 });
 
-const Post = mongooes.model("Post",postSchema);
+const Post = mongoose.model("Post",postSchema);
 
-const tagSchema = mongooes.Schema({
+const tagSchema = mongoose.Schema({
     company:{type:String, required: true },
-    post: {type:mongooes.Schema.Types.ObjectId,ref:"post", required: true}
+    post: {type:mongoose.Schema.Types.ObjectId,ref:"post", required: true}
 
 })
 
-const tag = mongooes.model("tag",tagSchema);
+const tag = mongoose.model("tag",tagSchema);
+
+app.get("/users",async(req,res)=>{
+    const user = await User.find().lean().exec();
+    return res.status(200).send({user})
+})
+
+app.get("/users/:id/posts",async(req,res)=>{
+    const posts = await Post.find({skill : req.params.id}).lean().exec();
+    const skill = await User.findById(req.params.id).lean().exec();
+    return res.status(200).send({posts,skill})
+})
 
 
+app.get("/posts", async(req, res) => {
+     const post = await Post.find().lean().exec();
+     return res.status(200).send({post})
+})
 
-
-
-app.listen(5678, async function(){
+app.listen(567, async function(){
 await connect();
 
 console.log("listening on port 5678...");

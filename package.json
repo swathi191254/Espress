@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^4.17.1",
+    "mongo": "^0.1.0",
     "mongoose": "^5.13.13"
   },
   "name": "express",
@@ -8,7 +9,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node eval.js"
+    "server": "node eval.js"
   },
   "keywords": [],
   "author": "",
@@ -21,6 +22,5 @@
     "url": "https://github.com/swathi191254/Express191254/issues"
   },
   "homepage": "https://github.com/swathi191254/Express191254#readme",
-  "devDependencies": {},
   "description": ""
 }
