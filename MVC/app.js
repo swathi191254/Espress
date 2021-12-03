@@ -1,22 +1,13 @@
-const e = require('express');
+
 const express = require('express');
 
+const mongoose = require('mongoose');
+var connect = require('./config/db')
 
-const app = express();
 
 app.use(express.json());
 
 
-const userSchema = new mongoose.Schema({
-    company:{type:String, required: true},
-    job:{type:String, required: true},
-    skill:{type:String, required: true},
-    rating:{type:String, required: true},
-    city:{type:String, required: true},
-    notice:{type:String, required: true },
-
-});
-const User = new mongoose.model("user",userSchema);
 
 const postSchema = new mongoose.Schema({
     company: {type:String, required: true},
