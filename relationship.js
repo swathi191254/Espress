@@ -18,28 +18,7 @@ const userSchema = new mongoose.Schema({
 });
 const User = new mongoose.model("user",userSchema);
 
-const postSchema = new mongoose.Schema({
-    company: {type:String, required: true},
-    job:{type:String, required: true},
-    skill:{type:String, required: true},
-    tags :[
-        {type:mongoose.Schema.Types.ObjectId,ref:"tag", required: true}
-    ],
-},
-{
-    versionkey:false,
-    timestamps:true
-});
 
-const Post = mongoose.model("Post",postSchema);
-
-const tagSchema = mongoose.Schema({
-    company:{type:String, required: true },
-    post: {type:mongoose.Schema.Types.ObjectId,ref:"post", required: true}
-
-})
-
-const tag = mongoose.model("tag",tagSchema);
 
 app.get("/books",async(req,res)=>{
     const user = await User.find().lean().exec();
